@@ -39,7 +39,10 @@ The layout design, logo and images are credit to <a href="https://github.com/Roc
 
 ## :file_folder: Backend
 
-The backend serves as an API to serve content to the mobile and web versions. Also the backend makes the connection betweewn the SQLite database and the Frontend/Mobile.
+The backend serves an API (JSON format) that delivers the content to all platforms (Web & Mobile).
+Also the backend contacts with the SQLite database to store all the incidents and NGO information. 
+The access to the database info is done through calls to the API.
+ 
 
 ## :computer: Frontend
 

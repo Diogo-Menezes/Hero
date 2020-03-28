@@ -12,26 +12,12 @@
 <p align="center">
   <a href="#-tech">Tech</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <p><br></p>
 
-## Screenshots
-<p align="center">
-  <img src="/mobile/screens/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
-  <img src="/mobile/screens/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
-  <img src="/mobile/screens/be-the-hero-mobile-2.png" width="250px" alt="Be the hero mobile2"/>
-</p>
-<p align="center">
-    <img src="/frontend/screens/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
-</p>
-<p align="center">
-  <img src="/frontend/screens/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
-</p>
-
-
-## :bomb: Techs
+## :rocket: Techs
 
 This project was developed with the following techs:
 
@@ -65,7 +51,24 @@ In the frontend we have the webpage that allows the following actions:
   <li>List NGO Incidents</li>
 </ul>
 
+
+## Web Screenshots
+<p align="center">
+    <img src="/frontend/screens/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
+</p>
+<p align="center">
+  <img src="/frontend/screens/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
+</p>
+
+
 ## Mobile
 
 The mobile version allows the mobile users to watch the all cases.
 In each case the user can access a detail screen to have more information on the case and contact the NGO through Whatsapp or Email.
+
+## Mobile Screenshots
+<p align="center">
+  <img src="/mobile/screens/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
+  <img src="/mobile/screens/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
+  <img src="/mobile/screens/be-the-hero-mobile-2.png" width="250px" alt="Be the hero mobile2"/>
+</p>

@@ -18,6 +18,8 @@
 </p>
 
 <p><br></p>
+<img src="/mock-be-the-hero.jpg"/>
+<p><br></p>
 
 ## 🚀 Tech
 

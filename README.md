@@ -9,14 +9,17 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-tech">Tech</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#page_with_curl-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#-tech">Tech</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#file_folder-backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <p><br></p>
 
-## :rocket: Tech
+## 🚀 Tech
 
 This project was developed with the following techs:
 
@@ -25,7 +28,7 @@ This project was developed with the following techs:
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 
-## :page_with_curl: Project
+## 📃 Project
 
 Be The Hero is a project that aims to request help from the people for NGO (Non Governmental Organizations) cases.
 The NGO creates an account where then she can open cases and the people that use the app then have access to the cases listed be each NGO.

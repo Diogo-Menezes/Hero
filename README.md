@@ -18,12 +18,18 @@
 <p><br></p>
 
 ## Screenshots
+<p align="center">
+  <img src="/mobile/screens/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
+  <img src="/mobile/screens/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
+  <img src="/mobile/screens/be-the-hero-mobile-2.png" width="250px" alt="Be the hero mobile2"/>
+</p>
+<p align="center">
+    <img src="/frontend/screens/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
+</p>
+<p align="center">
+  <img src="/frontend/screens/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
+</p>
 
-<img source="/mobile/screens/be-the-hero-mobile-splash.png" width="150px" alt="Be the hero mobile SplashScreen">
-<img source="/mobile/screens/be-the-hero-mobile-1.png" width="150px" alt="Be the hero mobile">
-<img source="/mobile/screens/be-the-hero-mobile-2.png" width="150px" alt="Be the hero mobile">
-<img source="/frontend/screens/be-the-hero-new-login.png" width="150px" alt="Be the hero Web Login"> 
-<img source="/frontend/screens/be-the-hero-new-login.png" width="150px" alt="Be the hero Web new case"> 
 
 ## :bomb: Techs
 

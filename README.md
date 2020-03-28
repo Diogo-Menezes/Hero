@@ -5,7 +5,6 @@
   <img alt="Github Stack Node.Js" src="https://img.shields.io/badge/-Node.Js-blue"/>
   <img alt="Github Stack React.Js" src="https://img.shields.io/badge/-React.Js%20-blue"/>
   <img alt="Github Stack React Native" src="https://img.shields.io/badge/-React%20Native-blue"/>
-  <img alt="Github Stack React Native" src="https://img.shields.io/badge/-React%20Native-blue"/>
   <img alt="Github Version Count" src="https://img.shields.io/badge/Version-1-brightgreen"/>
 </p>
 
@@ -17,7 +16,7 @@
 
 <p><br></p>
 
-## :rocket: Techs
+## :rocket: Tech
 
 This project was developed with the following techs:
 
@@ -31,15 +30,15 @@ This project was developed with the following techs:
 Be The Hero is a project that aims to request help from the people for NGO (Non Governmental Organizations) cases.
 The NGO creates an account where then she can open cases and the people that use the app then have access to the cases listed be each NGO.
 
-## 🔖 Layout & Logo
+## 🔖 Layout
 
 The layout design, logo and images are credit to <a href="https://github.com/Rocketseat" target="_blank">Rocketseat.</a>
 
-## Backend
+## :file_folder: Backend
 
 The backend serves as an API to serve content to the mobile and web versions. Also the backend makes the connection betweewn the SQLite database and the Frontend/Mobile.
 
-## Frontend
+## :computer: Frontend
 
 In the frontend we have the webpage that allows the following actions:
 
@@ -57,7 +56,7 @@ In the frontend we have the webpage that allows the following actions:
   <img src="/frontend/screens/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
 
 
-## Mobile
+## :iphone: Mobile
 
 The mobile version allows the mobile users to watch the all cases.
 In each case the user can access a detail screen to have more information on the case and contact the NGO through Whatsapp or Email.

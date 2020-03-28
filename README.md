@@ -1,3 +1,7 @@
+
+<h1 align="center">
+<img src="/frontend/src/assets/logo.svg" width="150px" alt="Be the Hero"/></h1>
+<h3 align="center">Be the Hero</h3>
 <p align="center">
   <a href="#techs">Tech</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

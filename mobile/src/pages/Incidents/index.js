@@ -39,7 +39,6 @@ export default function Incidents() {
 
   useEffect(() => {
     loadIncidents();
-    console.log(incidents)
   }, []);
 
   return (

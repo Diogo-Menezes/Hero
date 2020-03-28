@@ -19,11 +19,11 @@
 
 ## Screenshots
 
-<a href="/mobile/screens/be-the-hero-mobile-splash.png" width="150px" alt="Be the hero mobile SplashScreen">
-<a href="/mobile/screens/be-the-hero-mobile-1.png" width="150px" alt="Be the hero mobile">
-<a href="/mobile/screens/be-the-hero-mobile-2.png" width="150px" alt="Be the hero mobile ">
-<a href="/frontend/screens/be-the-hero-new-login.png" width="150px" alt="Be the hero Web Login"> 
-<a href="/frontend/screens/be-the-hero-new-login.png" width="150px" alt="Be the hero Web new case"> 
+<img source="/mobile/screens/be-the-hero-mobile-splash.png" width="150px" alt="Be the hero mobile SplashScreen">
+<img source="/mobile/screens/be-the-hero-mobile-1.png" width="150px" alt="Be the hero mobile">
+<img source="/mobile/screens/be-the-hero-mobile-2.png" width="150px" alt="Be the hero mobile">
+<img source="/frontend/screens/be-the-hero-new-login.png" width="150px" alt="Be the hero Web Login"> 
+<img source="/frontend/screens/be-the-hero-new-login.png" width="150px" alt="Be the hero Web new case"> 
 
 ## :bomb: Techs
 

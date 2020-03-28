@@ -52,13 +52,9 @@ In the frontend we have the webpage that allows the following actions:
 </ul>
 
 
-## Web Screenshots
-<p align="center">
-    <img src="/frontend/screens/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
-</p>
-<p align="center">
+#### Web Screenshots
+  <img src="/frontend/screens/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
   <img src="/frontend/screens/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
-</p>
 
 
 ## Mobile
@@ -66,7 +62,7 @@ In the frontend we have the webpage that allows the following actions:
 The mobile version allows the mobile users to watch the all cases.
 In each case the user can access a detail screen to have more information on the case and contact the NGO through Whatsapp or Email.
 
-## Mobile Screenshots
+#### Mobile Screenshots
 <p align="center">
   <img src="/mobile/screens/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
   <img src="/mobile/screens/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>

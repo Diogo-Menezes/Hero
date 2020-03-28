@@ -25,7 +25,7 @@ This project was developed with the following techs:
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 
-## 💻 Project
+## :page_with_curl: Project
 
 Be The Hero is a project that aims to request help from the people for NGO (Non Governmental Organizations) cases.
 The NGO creates an account where then she can open cases and the people that use the app then have access to the cases listed be each NGO.

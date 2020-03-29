@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('../../src/app.js');
-const connection = require('../../src/database/connection');
+const connection = require('../../src/database/database');
 
 beforeEach(async () => {
   await connection.migrate.latest();

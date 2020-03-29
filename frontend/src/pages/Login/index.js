@@ -17,8 +17,8 @@ export default function Login() {
       const resp = await api.post('sessions', { id });
       console.log(resp.data.name);
       //save the session on the storage of the navigator
-      localStorage.setItem('ongId', id);
-      localStorage.setItem('ongName', resp.data.name);
+      localStorage.setItem('ngoID', id);
+      localStorage.setItem('ngoName', resp.data.name);
       history.push('./profile');
     } catch (error) {
       alert("Can't make your login");

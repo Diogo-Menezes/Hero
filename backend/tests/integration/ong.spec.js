@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('../../src/app.js');
-const connection = require('../../src/database/connection');
+const connection = require('../../src/database/database');
 
 beforeEach(async () => {
   await connection.migrate.latest();
@@ -14,7 +14,7 @@ afterAll(async () => {
 describe('ONG', () => {
   it('Should be able to create a new ONG', async () => {
     const response = await request(app)
-      .post('/ongs')
+      .post('/ngos')
       .send({
         name: 'ONG name',
         email: 'diogo@mail.com',

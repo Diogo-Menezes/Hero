@@ -13,5 +13,5 @@ app.use(errors());
 
 module.exports = app;
 
-//The door used to access my app
+//The door used to access the app
 // app.listen(3333);

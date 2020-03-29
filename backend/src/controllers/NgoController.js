@@ -1,16 +1,18 @@
-const connection = require('../database/connection');
-const generateUniqueId = require('../utils/generateUniqueId')
+const database = require('../database/database');
+const generateUniqueId = require('../utils/generateUniqueId');
+
+const NGO_TABLE = 'ngos';
 
 module.exports = {
   async index(request, response) {
-    const ngos = await connection('ngos').select('*');
+    const ngos = await database(NGO_TABLE).select('*');
     return response.json(ngos);
   },
   async create(request, response) {
     const { name, email, whatsapp, city, uf } = request.body;
-    const id = generateUniqueId()
+    const id = generateUniqueId();
 
-    await connection('ngos').insert({
+    await database(NGO_TABLE).insert({
       id,
       name,
       email,

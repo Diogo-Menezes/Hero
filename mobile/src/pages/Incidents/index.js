@@ -69,7 +69,6 @@ export default function Incidents() {
             <Text style={styles.IncidentProperty}>Incident:</Text>
             <Text style={styles.IncidentValue}>{incident.title}</Text>
             <Text style={styles.IncidentProperty}>Value:</Text>
-            <Text style={styles.IncidentProperty}>Value:</Text>
             <Text style={styles.IncidentValue}>
               {Intl.NumberFormat('pt-PT', {
                 style: 'currency',

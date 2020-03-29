@@ -10,7 +10,7 @@ export default function NewIncident() {
   const [description, setDescription] = useState('');
   const [value, setValue] = useState('');
   const history = useHistory();
-  const ongId = localStorage.getItem('ongId');
+  const ngoId = localStorage.getItem('ngoId');
 
   async function handleNewIncident(e) {
     e.preventDefault();
@@ -24,7 +24,7 @@ export default function NewIncident() {
     try {
       await api.post('incidents', data, {
         headers: {
-          authorization: ongId
+          authorization: ngoId
         }
       });
 

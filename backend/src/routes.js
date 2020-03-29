@@ -1,7 +1,7 @@
 const express = require('express');
 const { celebrate, Segments, Joi } = require('celebrate');
 
-const OngController = require('./controllers/OngController');
+const NgoController = require('./controllers/NgoController');
 const IncidentsController = require('./controllers/IncidentsController');
 const ProfileController = require('./controllers/ProfileController');
 const SessionController = require('./controllers/SessionController');
@@ -9,10 +9,10 @@ const routes = express.Router();
 
 routes.post('/sessions', SessionController.create);
 
-routes.get('/ongs', OngController.index);
+routes.get('/ngos', NgoController.index);
 
 routes.post(
-  '/ongs',
+  '/ngos',
   celebrate({
     [Segments.BODY]: Joi.object().keys({
       name: Joi.string().required(),
@@ -29,11 +29,11 @@ routes.post(
         .length(2)
     })
   }),
-  OngController.create
+  NgoController.create
 );
 
 routes.get(
-  '/profile',
+  '/ngo/incidents',
   celebrate({
     [Segments.HEADERS]: Joi.object({
       authorization: Joi.string().required()

@@ -7,8 +7,8 @@ import './styles.css';
 import logoImg from '../../assets/logo.svg';
 
 export default function Dash() {
-  const ongName = localStorage.getItem('ongName');
-  const ongId = localStorage.getItem('ongId');
+  const ngoName = localStorage.getItem('ngoName');
+  const ngoID = localStorage.getItem('ngoID');
 
   const [incidents, setIncidents] = useState([]);
   const history = useHistory();
@@ -22,7 +22,7 @@ export default function Dash() {
     try {
       await api.delete(`incidents/${id}`, {
         headers: {
-          authorization: ongId
+          authorization: ngoID
         }
       });
       setIncidents(incidents.filter(incident => incident.id !== id));
@@ -32,16 +32,16 @@ export default function Dash() {
   }
 
   useEffect(() => {
-    api.get('profile', { headers: { Authorization: ongId } }).then(response => {
+    api.get('ngo/incidents', { headers: { Authorization: ngoID } }).then(response => {
       setIncidents(response.data);
     });
-  }, [ongId]);
+  }, [ngoID]);
 
   return (
     <div className='profile-container'>
       <header>
         <img src={logoImg} alt='Be the hero' />
-        <span>Welcome to the page, {ongName}</span>
+        <span>Welcome to the page, {ngoName}</span>
         <Link className='button' to='./incidents/new'>
           Add new case
         </Link>

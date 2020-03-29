@@ -6,6 +6,6 @@ const config =
     ? configuration.test
     : configuration.development;
 
-const connection = knex(config);
+const database = knex(config);
 
-module.exports = connection;
+module.exports = database;

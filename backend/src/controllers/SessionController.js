@@ -1,19 +1,19 @@
-const connection = require('../database/connection');
+const database = require('../database/database');
 
 module.exports = {
   async create(request, response) {
     const { id } = request.body;
-    const ong = await connection('ongs')
+    const ngo = await database('ngos')
       .where('id', id)
       .select('name')
       .first();
 
-    if (!ong) {
-      return response.status(400).json({ error: 'No ONG found with this ID' });
+    if (!ngo) {
+      return response.status(400).json({ error: 'No ngo found with this ID' });
     }
-    return response.json(ong);
+    return response.json(ngo);
   },
   async delete(request, response) {
-    await connection('ongs');
+    await database('ngos');
   }
 };

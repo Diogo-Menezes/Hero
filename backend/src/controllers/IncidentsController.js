@@ -1,23 +1,24 @@
-const connection = require('../database/connection');
+const database = require('../database/database');
 
 const PAGE_LIMIT = 5;
 const INCIDENTS_TABLE = 'incidents';
+const NGOS_TABLE = 'ngos';
 
 module.exports = {
   async index(request, response) {
     const { page = 1 } = request.query;
 
-    const [count] = await connection(INCIDENTS_TABLE).count();
+    const [count] = await database(INCIDENTS_TABLE).count();
 
-    const incidents = await connection(INCIDENTS_TABLE)
-      .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
+    const incidents = await database(INCIDENTS_TABLE)
+      .join(NGOS_TABLE, 'ngos.id', '=', 'incidents.ngo_id')
       .select(
         'incidents.*',
-        'ongs.name',
-        'ongs.email',
-        'ongs.whatsapp',
-        'ongs.city',
-        'ongs.uf'
+        'ngos.name',
+        'ngos.email',
+        'ngos.whatsapp',
+        'ngos.city',
+        'ngos.uf'
       )
       .limit(PAGE_LIMIT)
       .offset((page - 1) * PAGE_LIMIT);
@@ -27,11 +28,21 @@ module.exports = {
   },
   async create(request, response) {
     const { title, description, value } = request.body;
-    const ong_id = request.headers.authorization;
+    const ngo_id = request.headers.authorization;
 
-    const [id] = await connection(INCIDENTS_TABLE).insert({
+    //Check if the ngo_id is valid, however only a identified ngo can create an incident
+    const ngoID = await database(NGOS_TABLE)
+      .select('name')
+      .where('id', ngo_id);
+
+    if (ngoID.length === 0) {
+      console.log(ngoID);
+      return response.status(401).json({ error: 'Invalid ID' });
+    }
+
+    const [id] = await database(INCIDENTS_TABLE).insert({
       description,
-      ong_id,
+      ngo_id,
       title,
       value
     });
@@ -39,18 +50,23 @@ module.exports = {
     return response.json({ id });
   },
   async delete(request, response) {
-    const ong_id = request.headers.authorization;
+    const ngo_id = request.headers.authorization;
     const { id } = request.params;
-    const incident = await connection(INCIDENTS_TABLE)
+    const incident = await database(INCIDENTS_TABLE)
       .where('id', id)
-      .select('ong_id')
+      .select('ngo_id')
       .first();
-      
-    if (incident.ong_id !== ong_id) {
+
+    //Check if returned something
+    if (!incident) {
+      return response.status(401).json({ error: 'No such item' });
+    }
+
+    if (incident.ngo_id !== ngo_id) {
       return response.status(401).json({ error: 'Operation not allowed' });
     }
 
-    await connection(INCIDENTS_TABLE)
+    await database(INCIDENTS_TABLE)
       .where('id', id)
       .delete();
 

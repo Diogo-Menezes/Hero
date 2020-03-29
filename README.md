@@ -18,24 +18,9 @@
 </p>
 
 <p><br></p>
-<img src="/mock-be-the-hero.jpg"/>
+<img src="/screenshots/mock-be-the-hero.jpg"/>
 <p><br></p>
 
-## Screenshots
-
-<p align="center">
-  <img src="/mobile/screens/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
-  <img src="/mobile/screens/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
-  <img src="/mobile/screens/be-the-hero-mobile-2.png" width="250px" alt="Be the hero mobile2"/>
-</p>
-<p align="center">
-    <img src="/frontend/screens/be-the-hero-new-login.png" width="250px" alt="Be the hero Web Login"/>
-</p>
-<p align="center">
-  <img src="/frontend/screens/be-the-hero-new-case.png" width="250px" alt="Be the hero Web new case"/>  
-</p>
-
-## :bomb: Techs
 ## 🚀 Tech
 
 This project was developed with the following techs:
@@ -75,18 +60,16 @@ In the frontend we have the webpage that allows the following actions:
 
 
 #### Web Screenshots
-  <img src="/frontend/screens/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
-  <img src="/frontend/screens/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
+  <img src="/screenshots/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
+  <img src="/screenshots/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
 
 
 ## :iphone: Mobile
-
 The mobile version allows the mobile users to watch all cases.
 In each case the user can access a detail screen to have more information on the case and contact the NGO through Whatsapp or Email.
 
 #### Mobile Screenshots
-<br>
-<p align="center">
-  <img src="/mobile/screens/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
-  <img src="/mobile/screens/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
+<p>
+  <img src="/screenshots/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
+  <img src="/screenshots/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
 </p>

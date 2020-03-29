@@ -7,29 +7,35 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20,
+    paddingTop: Constants.statusBarHeight + 20
   },
   header: {
-    marginTop:32,
+    marginTop: 32,
     alignItems: 'center'
   },
   heroesImg: {
     width: '100%',
     maxHeight: '55%',
     marginVertical: 32,
-    resizeMode:"contain"
+    resizeMode: 'contain'
+  },
+  actionContainer: {
+    flexDirection:"row",
+    alignSelf: 'stretch',
+    justifyContent: 'space-evenly',
+
   },
   action: {
     marginVertical: 8,
     backgroundColor: colors.accentRed,
-    width: '50%',
+    width: '45%',
     borderRadius: 8,
     height: 50,
     justifyContent: 'center',
     alignItems: 'center'
   },
   actionText: {
-    textTransform:"uppercase",
+    textTransform: 'uppercase',
     fontSize: 18,
     fontWeight: 'bold',
     color: 'white'

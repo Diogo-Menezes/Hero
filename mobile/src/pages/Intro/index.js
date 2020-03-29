@@ -23,12 +23,14 @@ export default function Intro() {
       <View style={styles.header}>
         <Image source={logoImg} />
         <Image style={styles.heroesImg} source={heroesImg} />
-        <TouchableOpacity style={styles.action} onPress={heroRoute}>
-          <Text style={styles.actionText}>Hero</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.action} onPress={ngoRoute}>
-          <Text style={styles.actionText}>NGO</Text>
-        </TouchableOpacity>
+        <View style={styles.actionContainer}>
+          <TouchableOpacity style={styles.action} onPress={heroRoute}>
+            <Text style={styles.actionText}>Hero</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.action} onPress={ngoRoute}>
+            <Text style={styles.actionText}>NGO</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

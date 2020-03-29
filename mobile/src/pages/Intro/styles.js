@@ -7,33 +7,20 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20
+    paddingTop: Constants.statusBarHeight + 20,
   },
   header: {
-    marginTop: 32,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    marginTop:32,
     alignItems: 'center'
   },
   heroesImg: {
     width: '100%',
-    maxHeight: '50%',
-    marginTop: 32,
-    resizeMode: 'contain'
-  },
-  inputContainer: {
-    flex: 1,
-    alignItems: 'center'
-  },
-  textInput: {
-    borderRadius: 8,
+    maxHeight: '55%',
     marginVertical: 32,
-    fontSize: 16,
-    width: '60%',
-    padding: 8,
-    backgroundColor: 'white'
+    resizeMode:"contain"
   },
-  LoginAction: {
+  action: {
+    marginVertical: 8,
     backgroundColor: colors.accentRed,
     width: '50%',
     borderRadius: 8,
@@ -42,6 +29,7 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   actionText: {
+    textTransform:"uppercase",
     fontSize: 18,
     fontWeight: 'bold',
     color: 'white'

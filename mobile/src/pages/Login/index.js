@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Feather } from '@expo/vector-icons';
-import { useNavigation, useRoute } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import {
   View,
   Text,
   Image,
   TouchableOpacity,
-  Linking,
   TextInput
 } from 'react-native';
 import logoImg from '../../assets/logo.png';

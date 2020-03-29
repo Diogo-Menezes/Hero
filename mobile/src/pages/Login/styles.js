@@ -7,43 +7,66 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: colors.accentRed
   },
   header: {
-    marginTop: 32,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
+    height: '25%',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginBottom: 16
   },
   heroesImg: {
-    width: '100%',
-    maxHeight: '50%',
     marginTop: 32,
     resizeMode: 'contain'
   },
   inputContainer: {
-    flex: 1,
-    alignItems: 'center'
+    backgroundColor: colors.white25percent,
+    alignItems: 'center',
+    borderRadius: 12,
+    paddingBottom: 16
+  },
+  inputLabel: {
+    marginVertical: 16,
+    fontSize: 18,
+    flexWrap: 'wrap',
+    fontWeight: 'bold',
+    color: 'white'
   },
   textInput: {
     borderRadius: 8,
-    marginVertical: 32,
     fontSize: 16,
-    width: '60%',
+    width: '70%',
     padding: 8,
-    backgroundColor: 'white'
+    fontWeight: 'bold',
+    backgroundColor: 'white',
+    marginBottom: 16
   },
   LoginAction: {
     backgroundColor: colors.accentRed,
-    width: '50%',
+    width: '70%',
     borderRadius: 8,
     height: 50,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginTop:8,
+    marginBottom: 16,
+    shadowColor: 'black',
+    elevation: 12
   },
   actionText: {
+    textTransform: 'uppercase',
     fontSize: 18,
     fontWeight: 'bold',
     color: 'white'
+  },
+  notRegisteredContainer: {
+    alignSelf: 'stretch'
+  },
+  notRegisteredText: {
+    alignSelf: 'center',
+    lineHeight: 22,
+    color: 'white',
+    fontSize: 14
   }
 });

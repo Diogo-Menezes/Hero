@@ -3,7 +3,7 @@
 <p align="center">
   <img alt="Github JavaScript" src="https://img.shields.io/badge/-JavaScript-green"/>
   <img alt="Github Stack Node.Js" src="https://img.shields.io/badge/-Node.Js-blue"/>
-  <img alt="Github Stack React.Js" src="https://img.shields.io/badge/-React.Js%20-blue"/>
+  <img alt="Github Stack React" src="https://img.shields.io/badge/-React-blue"/>
   <img alt="Github Stack React Native" src="https://img.shields.io/badge/-React%20Native-blue"/>
   <img alt="Github Version Count" src="https://img.shields.io/badge/Version-1-brightgreen"/>
 </p>

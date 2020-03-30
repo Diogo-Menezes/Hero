@@ -80,4 +80,4 @@ In each case the user can access a detail screen to have more information on the
 
 
 ## ✅ Testing
-Also in this project we included some unit and integration tests(<a href="/backend/tests">test folder</a>) for the backend using jestify. 
+Also in this project we included some unit and integration tests (<a href="/backend/tests">test folder</a>) for the backend using <a href="https://jestjs.io/">Jest</a>. We also made use of the library <a href="https://github.com/visionmedia/supertest">Supertest</a> to help test our API endpoints.

@@ -26,9 +26,9 @@
 
 This project was developed with the following techs:
 
-- [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
+- [Node.js](https://nodejs.org/en/) [Backend]
+- [React](https://reactjs.org) [Frontend]
+- [React Native](https://facebook.github.io/react-native/) [Mobile]
 - [Expo](https://expo.io/)
 
 ## 📃 Project

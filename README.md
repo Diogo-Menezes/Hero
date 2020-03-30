@@ -33,8 +33,8 @@ This project was developed with the following techs:
 
 ## 📃 Project
 
-Be The Hero is a project that aims to request help from the people for NGO (Non Governmental Organizations) cases.
-The NGO creates an account where then she can open cases and the people that use the app then have access to the cases listed be each NGO.
+Be The Hero is a project that allows  NGO (Non Governmental Organizations) to post their incidents and request help from the app users.
+The NGO creates an account and then they can post incidents and let the public know. The users that use the app then have access to all the cases listed for each NGO.
 
 ## 🔖 Layout
 

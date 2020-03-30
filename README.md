@@ -22,7 +22,7 @@
 <img src="/screenshots/mock-be-the-hero.jpg"/>
 <p><br></p>
 
-## 🚀 Tech
+## 🚜 Tech
 
 This project was developed with the following techs:
 

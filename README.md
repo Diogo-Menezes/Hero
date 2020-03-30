@@ -14,7 +14,8 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#file_folder-backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#computer-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-testing">Testing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <p><br></p>
@@ -41,7 +42,7 @@ The layout design, logo and images are credit to <a href="https://github.com/Roc
 
 ## :file_folder: Backend
 
-The backend serves an API (JSON format) that delivers the content to all platforms (Web & Mobile).
+The backend serves as an <strong>Restfull API</strong> that delivers the content (in JSON format) to all platforms <strong>(Web & Mobile and can be consumed by other webservices).</strong>
 Also the backend contacts with the SQLite database to store all the incidents and NGO information. 
 The access to the database info is done through calls to the API.
  
@@ -58,6 +59,8 @@ In the frontend we have the webpage that allows the following actions:
   <li>List NGO Incidents</li>
 </ul>
 
+<strong>All this actions interact/communicate with our server that then makes the verification and validation of the information sent. And allows the information to be added to the SQLite database.</strong>
+
 
 #### Web Screenshots
   <img src="/screenshots/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
@@ -65,11 +68,14 @@ In the frontend we have the webpage that allows the following actions:
 
 
 ## :iphone: Mobile
-The mobile version allows the mobile users to watch all cases.
+The mobile version allows the mobile users to watch all cases (delivered by connecting with the server).
 In each case the user can access a detail screen to have more information on the case and contact the NGO through Whatsapp or Email.
 
 #### Mobile Screenshots
-<p>
   <img src="/screenshots/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
   <img src="/screenshots/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
-</p>
+
+
+
+## ✅ Testing
+Also in this project we included some unit and integration tests(<a href="/backend/tests">test folder</a>) for the backend using jestify. 

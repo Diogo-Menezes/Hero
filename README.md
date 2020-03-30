@@ -63,9 +63,10 @@ In the frontend we have the webpage that allows the following actions:
 
 
 #### Frontend Screenshots
-  <img src="/screenshots/be-the-hero-web1.png" width="250px" alt="Be the hero Web Login"/>
-  <img src="/screenshots/be-the-hero-web2.png" width="250px" alt="Be the hero Web new case"/>  
-
+<p>
+  <img src="/screenshots/mock-web-be-the-hero1.jpg" width="400px" alt="Be the hero Web Login"/>
+  <img src="/screenshots/mock-web-be-the-hero2.jpg" width="400px" alt="Be the hero Web new case"/>  
+</p>
 
 ## :iphone: Mobile
 The mobile version allows the mobile users to watch all cases (delivered by connecting with the server).

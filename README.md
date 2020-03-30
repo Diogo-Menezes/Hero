@@ -42,15 +42,15 @@ The layout design, logo and images are credit to <a href="https://github.com/Roc
 
 ## :file_folder: Backend
 
-The backend serves as an <strong>Restfull API</strong> that delivers the content (in JSON format) to all platforms <strong>(Web & Mobile and can be consumed by other webservices).</strong>
+The backend serves as an <strong>RESTful API</strong> that delivers the content (in JSON format) to all platforms <strong>(Web & Mobile and can be consumed by other webservices).</strong>
 Also the backend contacts with the SQLite database to store all the incidents and NGO information. 
 The access to the database info is done through calls to the API.
  
 
 ## :computer: Frontend
+<p>Built with React.Js and connesct with the backend consuming the RESTful API.</p>
 
 In the frontend we have the webpage that allows the following actions:
-
 <ul>
   <li>Register</li>
   <li>Login</li>
@@ -62,9 +62,9 @@ In the frontend we have the webpage that allows the following actions:
 <strong>All this actions interact/communicate with our server that then makes the verification and validation of the information sent. And allows the information to be added to the SQLite database.</strong>
 
 
-#### Web Screenshots
-  <img src="/screenshots/be-the-hero-new-login.png" width="450px" alt="Be the hero Web Login"/>
-  <img src="/screenshots/be-the-hero-new-case.png" width="450px" alt="Be the hero Web new case"/>  
+#### Frontend Screenshots
+  <img src="/screenshots/be-the-hero-web1.png" width="250px" alt="Be the hero Web Login"/>
+  <img src="/screenshots/be-the-hero-web2.png" width="250px" alt="Be the hero Web new case"/>  
 
 
 ## :iphone: Mobile
@@ -72,9 +72,10 @@ The mobile version allows the mobile users to watch all cases (delivered by conn
 In each case the user can access a detail screen to have more information on the case and contact the NGO through Whatsapp or Email.
 
 #### Mobile Screenshots
+<p>
   <img src="/screenshots/be-the-hero-mobile-splash.png" width="250px" alt="Be the hero mobile SplashScreen"/>
   <img src="/screenshots/be-the-hero-mobile-1.png" width="250px" alt="Be the hero mobile1"/>
-
+</p>
 
 
 ## ✅ Testing

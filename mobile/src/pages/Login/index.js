@@ -8,28 +8,65 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-  ScrollView
+  KeyboardAvoidingView,
+  Keyboard,
+  Alert
 } from 'react-native';
-import logoImg from '../../assets/logo.png';
-import iconPng from '../../../assets/icon.png';
+
+import logoImg from '../../../assets/icon.png';
 
 import styles from './styles';
 
 export default function Login() {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
-  function handleLogin() {
-    console.log('Login called');
-    api.get('/ongs');
+  const nav = useNavigation();
+
+  function checkInputs() {
+    if (id.length === 0) {
+      Alert.alert('ID', 'Please insert your ID');
+      return false;
+    }
+    if (password.length === 0) {
+      Alert.alert('Password', 'Please insert your password');
+      return false;
+    }
+    return true;
   }
+
+  async function handleLogin() {
+    if (isLoading) return;
+    if (!checkInputs()) return;
+    Keyboard.dismiss();
+    setIsLoading(true);
+
+    await api
+      .post('/sessions', { id })
+      //Redirect to NGO dashboard save the "token"
+      .then(resp => console.log(resp))
+      //Display error message
+      .catch(err => {
+        let message = err.message;
+        if (err.message.includes('timeout')) {
+          message = 'Please check your network connection.';
+        }
+        Alert.alert('Timeout', message);
+      });
+    setIsLoading(false);
+  }
+
   function navigateToRegister() {}
 
   return (
-
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <KeyboardAvoidingView behavior={'position'}>
         <View style={styles.header}>
-          <Image source={iconPng} />
+          <TouchableOpacity onPress={() => nav.goBack()}>
+            <Feather name='arrow-left' size={28} color='white' />
+          </TouchableOpacity>
+          <Image style={styles.heroesImg} source={logoImg} />
         </View>
         <View style={styles.inputContainer}>
           <Text style={styles.inputLabel}>Please enter your ID below</Text>
@@ -40,9 +77,14 @@ export default function Login() {
             }}
             style={[styles.textInput, { textAlign: 'center' }]}
             placeholder='ID'
-            blurOnSubmit={true}
+            blurOnSubmit={false}
+            returnKeyType='next'
+            onSubmitEditing={() => {
+              _inputPassword.focus();
+            }}
           />
           <TextInput
+            ref={component => (_inputPassword = component)}
             value={password}
             onChangeText={value => {
               setPassword(value);
@@ -50,10 +92,16 @@ export default function Login() {
             style={[styles.textInput, { textAlign: 'center' }]}
             placeholder='Password'
             blurOnSubmit={true}
+            secureTextEntry
+            textContentType='password'
+            onSubmitEditing={() => {
+              handleLogin;
+            }}
           />
           <TouchableOpacity
             style={styles.LoginAction}
-            onPress={navigateToRegister}
+            disabled={isLoading}
+            onPress={handleLogin}
           >
             <Text style={styles.actionText}>Login</Text>
           </TouchableOpacity>
@@ -65,7 +113,7 @@ export default function Login() {
             <Text style={styles.notRegisteredText}>SIGN UP</Text>
           </TouchableOpacity>
         </View>
-      </View>
-
+      </KeyboardAvoidingView>
+    </View>
   );
 }

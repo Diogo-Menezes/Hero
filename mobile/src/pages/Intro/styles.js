@@ -16,19 +16,19 @@ export default StyleSheet.create({
   heroesImg: {
     width: '100%',
     maxHeight: '55%',
-    marginVertical: 32,
+    marginVertical: 24,
     resizeMode: 'contain'
   },
   actionContainer: {
-    flexDirection:"row",
+    flexDirection: 'column',
     alignSelf: 'stretch',
-    justifyContent: 'space-evenly',
-
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
   action: {
     marginVertical: 8,
     backgroundColor: colors.accentRed,
-    width: '45%',
+    width: '60%',
     borderRadius: 8,
     height: 50,
     justifyContent: 'center',
@@ -36,8 +36,19 @@ export default StyleSheet.create({
   },
   actionText: {
     textTransform: 'uppercase',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
     color: 'white'
+  },
+  ngoLoginContainer: {
+    flexDirection: 'row',
+    marginTop: 16,
+    alignItems: "center"
+  },
+  ngoText: {
+    color: colors.accentRed,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    paddingLeft: 4
   }
 });

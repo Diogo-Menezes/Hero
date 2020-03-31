@@ -11,7 +11,14 @@ export default function Details() {
   const route = useRoute();
 
   const incident = route.params.incident;
-  const message = `Hi ${incident.name}, I'm contacting you because I would like to help in the incident: ${incident.title}, with the value of ${Intl.NumberFormat('pt-PT', {style:'currency', currency:'EUR'}  ).format(incident.value)} `;
+  const message = `Hi ${
+    incident.name
+  }, I'm contacting you because I would like to help in the incident: ${
+    incident.title
+  }, with the value of ${Intl.NumberFormat('pt-PT', {
+    style: 'currency',
+    currency: 'EUR'
+  }).format(incident.value)} `;
   function navigateBack() {
     navigation.goBack();
   }
@@ -32,10 +39,10 @@ export default function Details() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image source={logoImg} />
         <TouchableOpacity onPress={navigateBack}>
           <Feather name='arrow-left' size={28} color='#e02041' />
         </TouchableOpacity>
+        <Image source={logoImg} />
       </View>
       <View style={styles.incident}>
         <Text style={[styles.incidentProperty, { marginTop: 0 }]}>ONG:</Text>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Feather } from '@expo/vector-icons';
-import { useNavigation, useRoute } from '@react-navigation/native';
-import { View, Text, Image, TouchableOpacity, Linking } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import logoImg from '../../assets/logo.png';
 import heroesImg from '../../assets/heroes.png';
 import styles from './styles';
@@ -27,8 +27,11 @@ export default function Intro() {
           <TouchableOpacity style={styles.action} onPress={heroRoute}>
             <Text style={styles.actionText}>Hero</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.action} onPress={ngoRoute}>
-            <Text style={styles.actionText}>NGO</Text>
+          <TouchableOpacity style={styles.ngoAction} onPress={ngoRoute}>
+            <View style={styles.ngoLoginContainer}>
+              <Feather style={styles.ngoText} name='log-in' size={15} />
+              <Text style={styles.ngoText}> NGO Login</Text>
+            </View>
           </TouchableOpacity>
         </View>
       </View>

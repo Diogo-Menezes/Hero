@@ -12,15 +12,15 @@ export default StyleSheet.create({
   },
   header: {
     height: '25%',
-    flexDirection: 'column',
-    alignItems: 'center',
-    marginBottom: 16
+    flexDirection: 'row',
+    alignItems:"center"
   },
   heroesImg: {
-    marginTop: 32,
-    resizeMode: 'contain'
+    flex:1,
+    resizeMode:"contain"
   },
   inputContainer: {
+    marginTop: 50,
     backgroundColor: colors.white25percent,
     alignItems: 'center',
     borderRadius: 12,
@@ -49,7 +49,7 @@ export default StyleSheet.create({
     height: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop:8,
+    marginTop: 8,
     marginBottom: 16,
     shadowColor: 'black',
     elevation: 12

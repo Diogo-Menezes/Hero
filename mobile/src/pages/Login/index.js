@@ -14,8 +14,8 @@ import {
 } from 'react-native';
 
 import logoImg from '../../../assets/icon.png';
-
 import styles from './styles';
+import screens from '../../config/navigation';
 
 export default function Login() {
   const [id, setId] = useState('');
@@ -57,7 +57,9 @@ export default function Login() {
     setIsLoading(false);
   }
 
-  function navigateToRegister() {}
+  function navigateToRegister() {
+    nav.navigate(screens.Register);
+  }
 
   return (
     <View style={styles.container}>

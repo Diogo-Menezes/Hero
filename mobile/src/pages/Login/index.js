@@ -71,7 +71,7 @@ export default function Login() {
           <Image style={styles.heroesImg} source={logoImg} />
         </View>
         <View style={styles.inputContainer}>
-          <Text style={styles.inputLabel}>Please enter your ID below</Text>
+          <Text style={styles.inputLabel}>Please enter your details below</Text>
           <TextInput
             value={id}
             onChangeText={value => {

@@ -7,21 +7,22 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight+20,
+    paddingTop: Constants.statusBarHeight,
     backgroundColor: colors.accentRed
   },
   header: {
-    height:'5%',
+    paddingTop: 20,
+    height: '5%',
     flexDirection: 'row',
-    alignItems:"center"
+    alignItems: 'center'
   },
   heroesImg: {
-    flex:1,
-    height:100,
-    resizeMode:"contain"
+    flex: 1,
+    height: 100,
+    resizeMode: 'contain'
   },
   inputContainer: {
-    marginTop: 30,
+    marginTop: 50,
     backgroundColor: colors.white25percent,
     alignItems: 'center',
     borderRadius: 12,
@@ -41,7 +42,7 @@ export default StyleSheet.create({
     padding: 8,
     fontWeight: 'bold',
     backgroundColor: 'white',
-    marginBottom: 16  
+    marginBottom: 16
   },
   LoginAction: {
     backgroundColor: colors.accentRed,

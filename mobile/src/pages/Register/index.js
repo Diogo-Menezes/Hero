@@ -14,8 +14,7 @@ import {
   ScrollView,
   Platform
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-
+import screens from '../../config/navigation';
 import logoImg from '../../../assets/icon.png';
 
 import styles from './styles';
@@ -28,7 +27,6 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-
   const nav = useNavigation();
 
   function checkInputs() {
@@ -40,20 +38,26 @@ export default function Login() {
       Alert.alert('Password', 'Please insert your password');
       return false;
     }
+    if (password !== confirmPassword) {
+      Alert.alert('Password', `Passwords don't match`);
+      return false;
+    }
     return true;
   }
 
   async function handleRegister() {
     if (isLoading) return;
     if (!checkInputs()) return;
-    Keyboard.dismiss();
     setIsLoading(true);
 
     //TODO add password support
     await api
-      .post('/ong', { name, email, whatsapp, city })
+      .post('/ong', { name, email, whatsapp, city, password })
       //Redirect to NGO dashboard save the "token"
-      .then(resp => console.log(resp))
+      .then(resp => {
+        console.log(resp);
+        if (resp.token) navigateToIncidents;
+      })
       //Display error message
       .catch(err => {
         let message = err.message;
@@ -65,15 +69,16 @@ export default function Login() {
     setIsLoading(false);
   }
 
-  function navigateToIncidents() {}
+  function navigateToIncidents() {
+    nav.navigate(screens.OngIncidents);
+  }
 
   return (
-    <View style={styles.container}>
-      <KeyboardAvoidingView
-        keyboardVerticalOffset={30}
-        behavior={Platform.OS == 'ios' ? 'position' : 'height'}
-      >
-        <ScrollView showsVerticalScrollIndicator={false}>
+    <KeyboardAvoidingView
+      behavior={Platform.OS == 'ios' ? 'position' : 'height'}
+    >
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={styles.container}>
           <View style={styles.header}>
             <TouchableOpacity onPress={() => nav.goBack()}>
               <Feather name='arrow-left' size={28} color='white' />
@@ -155,8 +160,8 @@ export default function Login() {
               <Text style={styles.actionText}>Register</Text>
             </TouchableOpacity>
           </View>
-        </ScrollView>
-      </KeyboardAvoidingView>
-    </View>
+        </View>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }

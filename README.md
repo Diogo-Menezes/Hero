@@ -1,14 +1,13 @@
 <p align="center"><img src="/frontend/src/assets/logo.svg" width="150px" alt="Be the Hero"/></p>
-<h4 align="center">Be the Hero</h4>
-<h5 align="center"> OmniStack 11</h5>
+<h4 align="center">Be the Hero - OmniStack 11 by Rocketseat</h4>
 <p align="center">
-  <img alt="Github JavaScript" src="https://img.shields.io/badge/-JavaScript-green"/>
+   <img alt="Github JavaScript" src="https://img.shields.io/badge/-JavaScript-green"/>
   <img alt="Github Stack Node.Js" src="/labels/nodeJs_badge.svg"/>
   <img alt="Github Stack React" src="/labels/reactJsBadge.svg"/>
   <img alt="Github Stack React Native" src="/labels/react-badge.svg"/>
   <img alt="Github Version Count" src="https://img.shields.io/badge/Version-1-brightgreen"/>
 </p>
-
+<h4 align="center">Content</h4>
 <p align="center">
   <a href="#-tech">Tech</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
